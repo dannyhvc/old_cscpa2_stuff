@@ -22,6 +22,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(MyAllowSpecificOrigins,
     builder =>
     {
+        builder.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyMethod(); /// make sure the port is whatever port frontend is running on
         builder.WithOrigins("http://localhost:8081").AllowAnyHeader().AllowAnyMethod();
     });
 });
