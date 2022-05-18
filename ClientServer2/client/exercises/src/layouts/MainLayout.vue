@@ -3,6 +3,18 @@
 		<q-header elevated>
 			<q-toolbar>
 				<q-toolbar-title> Info3067 Exercises Application </q-toolbar-title>
+				<q-btn flat round dense icon="reorder" class="q-mr-xs">
+					<q-menu>
+						<q-list style="min-width: 100px">
+							<q-item clickable v-close-popup to="/">
+								<q-item-section>Home</q-item-section>
+							</q-item>
+							<q-item clickable v-close-popup to="categories">
+								<q-item-section>Categories</q-item-section>
+							</q-item>
+						</q-list>
+					</q-menu>
+				</q-btn>
 			</q-toolbar>
 		</q-header>
 		<q-page-container>

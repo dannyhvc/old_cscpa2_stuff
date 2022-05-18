@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="btn_name">Press the button</string>
+    <string name="btn_2">Press Me</string>
+    <string name="joke">A fragment walks into a bar, and the bartender asks for an ID. Fragment says, "I don't have an ID." So the bartender says, "Okay, I'll make a NullPointerException."</string>
+</resources>

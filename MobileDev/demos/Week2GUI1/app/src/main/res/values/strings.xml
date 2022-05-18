@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Week 2 GUI 1</string>
+    <string name="colour_red">Red</string>
+    <string name="colour_green">Green</string>
+    <string name="colour_blue">Blue</string>
+    <string name="colour_label">Colour</string>
+    <string name="checkbox_label">Bold</string>
+</resources>

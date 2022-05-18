@@ -1,8 +1,10 @@
 <template>
 	<q-page>
 		<div class="text-center q-mt-lg">
+			<!-- page title -->
 			<div class="text-h3">Car Case</div>
 
+			<!-- page logo -->
 			<q-avatar class="q-mb-md" size="xl" square>
 				<img :src="`/img/CompanyLogo.png`" />
 			</q-avatar>
@@ -27,10 +29,16 @@
 			>
 				{{ state.selectedBrand.name }} products
 			</div>
+			<!-- listed products -->
 			<q-scroll-area style="height: 55vh">
 				<q-card class="q-ma-md">
 					<q-list separator>
-						<q-item v-for="product in state.products" :key="product.id">
+						<q-item
+							v-for="product in state.products"
+							:key="product.id"
+							clickable
+							@click="selectProduct(product.id)"
+						>
 							<q-item-section avatar>
 								<q-avatar>
 									<!-- for adding picture next to car brand -->
@@ -38,18 +46,89 @@
 								</q-avatar>
 							</q-item-section>
 							<q-item-section class="text-left">
-								{{ product.description }}
+								{{ product.id }}
 							</q-item-section>
 						</q-item>
 					</q-list>
 				</q-card>
 			</q-scroll-area>
 		</div>
+
+		<!-- product details and dialog modal -->
+		<q-dialog
+			v-model="state.itemSelected"
+			transition-show="rotate"
+			transition-hide="rotate"
+		>
+			<q-card>
+				<q-card-actions align="right">
+					<q-btn flat label="X" color="primary" v-close-popup class="text-h5" />
+				</q-card-actions>
+				<q-card-section class="q-pa-none text-center">
+					<!-- /img/${product.graphicName} -->
+					<img
+						:src="`/img/${state.selectedProduct.graphicName}`"
+						class="item-image"
+					/>
+				</q-card-section>
+				<q-card-section class="q-pa-none text-center">
+					<div
+						style="
+							font-weight: bold;
+							font-size: larger;
+							margin-top: 3vh;
+							text-align: center;
+						"
+					>
+						<div
+							class="text-h5 text-bold text-center text-primary"
+							v-if="state.products.length > 0"
+						>
+							<!-- selected product - formate local msrp -->
+							{{ state.selectedProduct.productName }} -
+							{{ formatCurrency(state.selectedProduct.msrp) }}
+						</div>
+					</div>
+					<div style="font-size: larger; margin-top: 3vh; text-align: center">
+						{{ state.selectedProduct.description }}
+					</div>
+				</q-card-section>
+				<q-card-section>
+					<div class="row">
+						<div class="col-2 q-mr-sm">
+							<q-input
+								v-model.number="state.qty"
+								type="number"
+								filled
+								style="max-width: 15vw"
+								placeholder="qty"
+								hint="Qty"
+								dense
+							/>
+						</div>
+					</div>
+					<!-- add to tray submit button -->
+					<div class="col-4 q-mr-sm">
+						<q-btn
+							color="primary"
+							label="Add To Tray"
+							:disable="state.qty < 0"
+							@click="addToTray()"
+						/>
+					</div>
+				</q-card-section>
+
+				<q-card-section class="text-center text-positive">
+					{{ state.dialogStatus }}
+				</q-card-section>
+			</q-card>
+		</q-dialog>
 	</q-page>
 </template>
 <script>
 import { reactive, onMounted } from "vue";
 import { fetcher } from "../utils/apputil";
+import { formatCurrency } from "../utils/formatutils";
 export default {
 	setup() {
 		onMounted(() => {
@@ -62,6 +141,11 @@ export default {
 			products: [],
 			selectedBrand: {},
 			selectedBrandId: "",
+			selectedProduct: {},
+			dialogStatus: "",
+			itemSelected: false,
+			tray: [],
+			qty: 0,
 		});
 
 		const loadBrands = async () => {
@@ -88,16 +172,65 @@ export default {
 				state.status = `finding products for brand ${state.selectedBrand}...`;
 				state.products = await fetcher(`Product/${state.selectedBrand.id}`);
 				state.status = `loaded ${state.products.length} products for ${state.selectedBrand.name}`;
-				console.log(state);
 			} catch (err) {
 				console.log(err);
 				state.status = `Error has occured: ${err.message}`;
 			}
 		};
 
+		const selectProduct = async (menuitemid) => {
+			try {
+				// q-item click sends us the id, so we need to find the object
+				state.selectedProduct = state.products.find(
+					(item) => item.id === menuitemid
+				);
+				state.itemSelected = true;
+				state.dialogStatus = "";
+				if (sessionStorage.getItem("tray")) {
+					state.tray = JSON.parse(sessionStorage.getItem("tray"));
+				}
+			} catch (err) {
+				console.log(err);
+				state.status = `Error has occured: ${err.message}`;
+			}
+		};
+
+		const addToTray = () => {
+			let index = -1;
+			if (state.tray.length > 0) {
+				index = state.tray.findIndex(
+					// is item already on the tray
+					(item) => item.id === state.selectedProduct.id
+				);
+			}
+			if (state.qty > 0) {
+				index === -1 // add
+					? state.tray.push({
+							id: state.selectedProduct.id,
+							qty: state.qty,
+							item: state.selectedProduct,
+					  })
+					: (state.tray[index] = {
+							// replace
+							id: state.selectedProduct.id,
+							qty: state.qty,
+							item: state.selectedProduct,
+					  });
+				state.dialogStatus = `${state.qty} item(s) added`;
+			} else {
+				index === -1 ? null : state.tray.splice(index, 1); // remove
+				state.dialogStatus = `item(s) removed`;
+			}
+			sessionStorage.setItem("tray", JSON.stringify(state.tray));
+			state.qty = 0;
+		};
+
 		return {
 			state,
 			loadProducts,
+			selectProduct,
+			addToTray,
+			formatCurrency,
 		};
 	},
 };

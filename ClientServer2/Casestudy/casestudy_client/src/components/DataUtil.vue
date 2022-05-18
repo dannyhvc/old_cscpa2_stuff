@@ -1,41 +1,44 @@
 <template>
-	<div class="text-center q-mt-lg">
-		<div class="text-h4">Data Utility</div>
-		<q-btn
-			class="q-ma-sm"
-			color="white"
-			text-color="black"
-			label="Load Categories"
-			@click="loadCategories"
-		/>
-		<div class="status q-mt-md text-subtitle2 text-negative" text-color="red">
-			{{ state.status }}
-		</div>
-	</div>
+    <div class="text-center q-mt-lg">
+        <div class="text-h4">Data Utility</div>
+        <q-btn
+            class="q-ma-sm"
+            color="white"
+            text-color="black"
+            label="Load Categories"
+            @click="loadCategories"
+        />
+        <div
+            class="status q-mt-md text-subtitle2 text-negative"
+            text-color="red"
+        >
+            {{ state.status }}
+        </div>
+    </div>
 </template>
 <script>
 import { reactive } from "vue";
 export default {
-	setup() {
-		let state = reactive({
-			status: "",
-		});
-		const loadCategories = async () => {
-			// replace ###### with the port number your ASP.Net core server is using
-			let url = "https://localhost:7134/api/Data";
-			try {
-				state.status = "resetting casestudy tables ...";
-				let response = await fetch(`${url}`);
-				state.status = await response.json();
-			} catch (err) {
-				console.log(err);
-				state.status = `Error has occured: ${err.message}`;
-			}
-		};
-		return {
-			loadCategories,
-			state,
-		};
-	},
+    setup() {
+        let state = reactive({
+            status: "",
+        });
+        const loadCategories = async () => {
+            // replace ###### with the port number your ASP.Net core server is using
+            let url = "https://localhost:7134/api/Data";
+            try {
+                state.status = "resetting casestudy tables ...";
+                let response = await fetch(`${url}`);
+                state.status = await response.json();
+            } catch (err) {
+                console.log(err);
+                state.status = `Error has occured: ${err.message}`;
+            }
+        };
+        return {
+            loadCategories,
+            state,
+        };
+    },
 };
 </script>

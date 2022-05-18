@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Daniel Herrera\'s Quiz App</string>
+
+    <string name="title_string">Daniel Herrera\'s Triangle Quiz</string>
+    <string name="question">All right triangles have a side called the __________.</string>
+
+    <string name="response"></string>
+
+    <string name="answer_1">a) long part</string>
+    <string name="answer_2">b) hypotnus</string>
+    <string name="answer_3">c) angled side</string>
+    <string name="answer_4">d) hypotenuse</string>
+
+    <string name="submit_btn_txt">Submit</string>
+
+
+</resources>
