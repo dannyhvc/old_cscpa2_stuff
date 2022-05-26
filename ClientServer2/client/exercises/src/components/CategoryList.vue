@@ -131,6 +131,14 @@
 								@click="addToTray()"
 							/>
 						</div>
+						<div class="col-3">
+							<q-btn
+								color="primary"
+								label="View Tray"
+								:disable="state.tray.length < 1"
+								@click="viewTray()"
+							/>
+						</div>
 					</div>
 				</q-card-section>
 				<q-card-section class="text-center text-positive">
@@ -143,12 +151,18 @@
 <script>
 import { reactive, onMounted } from "vue";
 import { fetcher } from "../utils/apputil";
+import { useRouter } from "vue-router";
 
 export default {
 	setup() {
 		onMounted(() => {
 			loadCategories();
 		});
+
+		const router = useRouter();
+		const viewTray = () => {
+			router.push("tray");
+		};
 
 		let state = reactive({
 			status: "",
@@ -247,6 +261,7 @@ export default {
 			loadMenuitems,
 			selectMenuItem,
 			addToTray,
+			viewTray,
 		};
 	},
 };

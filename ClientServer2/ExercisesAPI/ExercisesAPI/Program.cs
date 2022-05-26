@@ -1,7 +1,33 @@
 using Microsoft.EntityFrameworkCore;
 using ExercisesAPI.DAL;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// jwt addition
+// get key from settings
+var appSettings = builder.Configuration.GetSection("AppSettings").GetValue<string>("Secret");
+var key = Encoding.ASCII.GetBytes(appSettings);
+// add scheme and options
+builder.Services.AddAuthentication(scheme =>
+{
+    scheme.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    scheme.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(option =>
+{
+    option.RequireHttpsMetadata = false;
+    option.SaveToken = true;
+    option.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 
 // add SQL Server Localdb connectivity
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

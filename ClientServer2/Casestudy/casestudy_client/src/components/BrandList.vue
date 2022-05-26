@@ -107,13 +107,22 @@
 							/>
 						</div>
 					</div>
-					<!-- add to tray submit button -->
+					<!-- add to cart submit button -->
+
 					<div class="col-4 q-mr-sm">
 						<q-btn
 							color="primary"
-							label="Add To Tray"
+							label="Add To Cart"
 							:disable="state.qty < 0"
-							@click="addToTray()"
+							@click="addToCart()"
+						/>
+					</div>
+					<div class="col-4">
+						<q-btn
+							color="primary"
+							label="View Cart"
+							:disable="state.cart.length < 1"
+							@click="viewCart()"
 						/>
 					</div>
 				</q-card-section>
@@ -129,6 +138,8 @@
 import { reactive, onMounted } from "vue";
 import { fetcher } from "../utils/apputil";
 import { formatCurrency } from "../utils/formatutils";
+import { useRouter } from "vue-router";
+
 export default {
 	setup() {
 		onMounted(() => {
@@ -144,9 +155,11 @@ export default {
 			selectedProduct: {},
 			dialogStatus: "",
 			itemSelected: false,
-			tray: [],
+			cart: [],
 			qty: 0,
 		});
+
+		const router = useRouter();
 
 		const loadBrands = async () => {
 			try {
@@ -186,8 +199,8 @@ export default {
 				);
 				state.itemSelected = true;
 				state.dialogStatus = "";
-				if (sessionStorage.getItem("tray")) {
-					state.tray = JSON.parse(sessionStorage.getItem("tray"));
+				if (sessionStorage.getItem("cart")) {
+					state.cart = JSON.parse(sessionStorage.getItem("cart"));
 				}
 			} catch (err) {
 				console.log(err);
@@ -195,22 +208,22 @@ export default {
 			}
 		};
 
-		const addToTray = () => {
+		const addToCart = () => {
 			let index = -1;
-			if (state.tray.length > 0) {
-				index = state.tray.findIndex(
-					// is item already on the tray
+			if (state.cart.length > 0) {
+				index = state.cart.findIndex(
+					// is item already on the cart
 					(item) => item.id === state.selectedProduct.id
 				);
 			}
 			if (state.qty > 0) {
 				index === -1 // add
-					? state.tray.push({
+					? state.cart.push({
 							id: state.selectedProduct.id,
 							qty: state.qty,
 							item: state.selectedProduct,
 					  })
-					: (state.tray[index] = {
+					: (state.cart[index] = {
 							// replace
 							id: state.selectedProduct.id,
 							qty: state.qty,
@@ -218,19 +231,24 @@ export default {
 					  });
 				state.dialogStatus = `${state.qty} item(s) added`;
 			} else {
-				index === -1 ? null : state.tray.splice(index, 1); // remove
+				index === -1 ? null : state.cart.splice(index, 1); // remove
 				state.dialogStatus = `item(s) removed`;
 			}
-			sessionStorage.setItem("tray", JSON.stringify(state.tray));
+			sessionStorage.setItem("cart", JSON.stringify(state.cart));
 			state.qty = 0;
+		};
+
+		const viewCart = () => {
+			router.push("cart");
 		};
 
 		return {
 			state,
 			loadProducts,
 			selectProduct,
-			addToTray,
+			addToCart,
 			formatCurrency,
+			viewCart,
 		};
 	},
 };
