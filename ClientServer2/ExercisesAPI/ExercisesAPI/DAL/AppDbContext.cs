@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ExercisesAPI.DAL.DomainClasses;
+﻿using ExercisesAPI.DAL.DomainClasses;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExercisesAPI.DAL
 {
