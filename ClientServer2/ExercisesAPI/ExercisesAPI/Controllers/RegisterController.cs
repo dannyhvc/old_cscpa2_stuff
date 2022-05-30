@@ -2,6 +2,7 @@
 using ExercisesAPI.DAL.DAO;
 using ExercisesAPI.DAL.DomainClasses;
 using ExercisesAPI.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
 
@@ -9,6 +10,7 @@ namespace ExercisesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RegisterController : ControllerBase
     {
         readonly AppDbContext _db;
@@ -19,6 +21,7 @@ namespace ExercisesAPI.Controllers
 
         [HttpPost]
         [Produces("application/json")]
+        [AllowAnonymous]
         public async Task<ActionResult<UserHelper>> Index(UserHelper helper)
         {
             UserDAO dao = new(_db);

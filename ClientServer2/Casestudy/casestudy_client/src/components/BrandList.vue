@@ -136,7 +136,7 @@
 </template>
 <script>
 import { reactive, onMounted } from "vue";
-import { fetcher } from "../utils/apputil";
+import { fetcher } from "../utils/apiutil";
 import { formatCurrency } from "../utils/formatutils";
 import { useRouter } from "vue-router";
 

@@ -150,7 +150,7 @@
 </template>
 <script>
 import { reactive, onMounted } from "vue";
-import { fetcher } from "../utils/apputil";
+import { fetcher } from "../utils/apiutil";
 import { useRouter } from "vue-router";
 
 export default {

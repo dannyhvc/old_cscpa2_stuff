@@ -9,6 +9,7 @@ namespace Casestudy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BrandController : ControllerBase
     {
         readonly AppDbContext _db;

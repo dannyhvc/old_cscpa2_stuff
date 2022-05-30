@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using ExercisesAPI.DAL.DAO;
 using Casestudy.DAL;
 using Casestudy.DAL.DomainClasses;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace ExercisesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         readonly AppDbContext _db;

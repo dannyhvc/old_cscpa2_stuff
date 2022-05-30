@@ -1,6 +1,7 @@
 ﻿using ExercisesAPI.DAL;
 using ExercisesAPI.DAL.DAO;
 using ExercisesAPI.DAL.DomainClasses;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -8,6 +9,7 @@ namespace ExercisesAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MenuItemController : ControllerBase
     {
         readonly AppDbContext _db;
