@@ -80,7 +80,7 @@ namespace Casestudy.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -125,7 +125,7 @@ namespace Casestudy.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
                 {
                     b.HasOne("Casestudy.DAL.DomainClasses.Brand", "Brand")
                         .WithMany()

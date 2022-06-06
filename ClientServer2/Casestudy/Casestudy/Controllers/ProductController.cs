@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ExercisesAPI.DAL.DAO;
 using Casestudy.DAL;
 using Casestudy.DAL.DomainClasses;
 using Microsoft.AspNetCore.Authorization;
+using Casestudy.DAL.DAO;
 
 namespace ExercisesAPI.Controllers
 {

@@ -1,0 +1,76 @@
+﻿{
+  "definitions": {
+    "Account": {
+      "type": [
+        "object"
+      ],
+      "properties": {
+        "Description": {
+          "type": "string"
+        },
+        "UserId": {
+          "type": "string"
+        },
+        "LoginUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "AccountNum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Password": {
+          "$ref": "#/definitions/Password"
+        }
+      },
+      "required": [
+        "Description",
+        "UserId",
+        "Password"
+      ]
+    },
+    "Password": {
+      "type": "object",
+      "properties": {
+        "Value": {
+          "type": "string"
+        },
+        "StrengthNum": {
+          "type": "integer",
+          "minimum": 0.0,
+          "maximum": 100.0
+        },
+        "StrengthText": {
+          "type": "string",
+          "enum": [
+            "very weak",
+            "weak",
+            "good",
+            "strong",
+            "very strong"
+          ]
+        },
+        "LastReset": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Value",
+        "StrengthNum",
+        "StrengthText",
+      ]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Account"
+  }
+}

@@ -8,7 +8,6 @@ namespace Casestudy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class DataController : ControllerBase
     {
         readonly AppDbContext? _ctx;
@@ -17,7 +16,7 @@ namespace Casestudy.Controllers
             _ctx = context;
         }
 
-        private async Task<String> GetMenuItemJsonFromWebAsync()
+        private async Task<string> GetMenuItemJsonFromWebAsync()
         {
             string url = "https://raw.githubusercontent.com/dannyhvc/sample_cars/main/car_products.json";
             var httpClient = new HttpClient();

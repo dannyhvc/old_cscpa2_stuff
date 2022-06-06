@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Description": "Amazon",
+    "UserId": "dh@gmail.com",
+    "Password": {
+      "Value": "akjlshdlkajshdf",
+      "StrengthNum": 13,
+      "StrengthText": "very strong",
+      "LastReset": null
+    },
+    "AccountNum": null,
+    "LoginUrl": "http://google.com"
+  }
+]

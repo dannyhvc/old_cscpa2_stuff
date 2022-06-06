@@ -100,6 +100,13 @@
 			<!-- clear cart button -->
 			<div class="col-3 text-center">
 				<q-btn
+					class="q-mr-sm"
+					color="primary"
+					label="Save Cart"
+					:disable="state.cart.length < 1"
+					@click="saveCart()"
+				/>
+				<q-btn
 					color="primary"
 					label="Empty Cart"
 					:disable="state.cart.length < 1"
@@ -112,6 +119,8 @@
 <script>
 import { onMounted, reactive } from "vue";
 import { formatCurrency } from "../utils/formatutils";
+import { poster } from "../utils/apiutil";
+
 export default {
 	setup() {
 		let state = reactive({
@@ -142,10 +151,31 @@ export default {
 			state.status = "cart cleared";
 		};
 
+		const saveCart = async () => {
+			let customer = JSON.parse(sessionStorage.getItem("user"));
+			let cart = JSON.parse(sessionStorage.getItem("cart"));
+			try {
+				state.status = "sending cart info to server";
+				let orderHelper = { email: customer.email, items: cart };
+				let payload = await poster("Order", orderHelper);
+
+				if (payload.indexOf("not") > 0) {
+					state.status = payload;
+				} else {
+					clearCart();
+					state.status = payload;
+				}
+			} catch (err) {
+				console.log(err);
+				state.status = `Error add cart: ${err}`;
+			}
+		};
+
 		return {
 			state,
 			formatCurrency,
 			clearCart,
+			saveCart,
 		};
 	},
 };

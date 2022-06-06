@@ -94,6 +94,82 @@ namespace ExercisesAPI.Migrations
                     b.ToTable("MenuItems");
                 });
 
+            modelBuilder.Entity("ExercisesAPI.DAL.DomainClasses.Tray", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("Timer")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasMaxLength(8)
+                        .HasColumnType("timestamp");
+
+                    b.Property<int>("TotalCalories")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalCarbs")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalCholesterol")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalFat")
+                        .HasColumnType("decimal(9,2)");
+
+                    b.Property<int>("TotalFibre")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalProtein")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalSalt")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trays");
+                });
+
+            modelBuilder.Entity("ExercisesAPI.DAL.DomainClasses.TrayItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("MenuItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Qty")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("Timer")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasMaxLength(8)
+                        .HasColumnType("timestamp");
+
+                    b.Property<int>("TrayId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuItemId");
+
+                    b.HasIndex("TrayId");
+
+                    b.ToTable("TrayItems");
+                });
+
             modelBuilder.Entity("ExercisesAPI.DAL.DomainClasses.User", b =>
                 {
                     b.Property<int>("Id")
@@ -136,6 +212,25 @@ namespace ExercisesAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("ExercisesAPI.DAL.DomainClasses.TrayItem", b =>
+                {
+                    b.HasOne("ExercisesAPI.DAL.DomainClasses.MenuItem", "MenuItem")
+                        .WithMany()
+                        .HasForeignKey("MenuItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ExercisesAPI.DAL.DomainClasses.Tray", "Tray")
+                        .WithMany()
+                        .HasForeignKey("TrayId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MenuItem");
+
+                    b.Navigation("Tray");
                 });
 #pragma warning restore 612, 618
         }

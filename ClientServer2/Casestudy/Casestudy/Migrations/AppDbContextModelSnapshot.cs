@@ -78,7 +78,66 @@ namespace Casestudy.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CustomerId")
+                        .HasMaxLength(128)
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("OrderAmount")
+                        .HasColumnType("money");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.OrderLineItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("QtyBackOrdered")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QtyOrdered")
+                        .HasMaxLength(15)
+                        .HasColumnType("int");
+
+                    b.Property<int>("QtySold")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("SellingPrice")
+                        .HasColumnType("money");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderLineItems");
+                });
+
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -123,7 +182,24 @@ namespace Casestudy.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.OrderLineItem", b =>
+                {
+                    b.HasOne("Casestudy.DAL.DomainClasses.Order", "Order")
+                        .WithMany("OrderLineItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Casestudy.DAL.DomainClasses.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Item");
+                });
+
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
                 {
                     b.HasOne("Casestudy.DAL.DomainClasses.Brand", "Brand")
                         .WithMany()
@@ -132,6 +208,11 @@ namespace Casestudy.Migrations
                         .IsRequired();
 
                     b.Navigation("Brand");
+                });
+
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Order", b =>
+                {
+                    b.Navigation("OrderLineItems");
                 });
 #pragma warning restore 612, 618
         }

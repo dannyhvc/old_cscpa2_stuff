@@ -197,6 +197,7 @@ export default {
 				state.selectedProduct = state.products.find(
 					(item) => item.id === menuitemid
 				);
+				state.selectedProduct.brand = state.selectedBrand;
 				state.itemSelected = true;
 				state.dialogStatus = "";
 				if (sessionStorage.getItem("cart")) {
