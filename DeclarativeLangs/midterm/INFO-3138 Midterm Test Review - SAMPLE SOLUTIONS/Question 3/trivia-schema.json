@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for validating a multiple choice question.",
+  
+  "type": "object",
+  "properties": {
+    "Choices": {
+      "description": "An series of choices from which an answer must be selected.",
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "Text": {
+      "description": "The question statement.",
+      "type": "string"
+    },
+    "CorrectIndex": {
+      "description": "The zero-based index of the correct answer within the array of choices.",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

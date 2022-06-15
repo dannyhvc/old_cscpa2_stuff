@@ -1,0 +1,17 @@
+[
+  {
+    "Choices": [ "Johannes", "Homer", "Wolfgangus", "Amadeus" ],
+    "Text": "Which of these was Mozart's middle name?",
+    "CorrectIndex": 2
+  },
+  {
+    "Choices": [ "None", "Two", "Ten", "Either six or eight" ],
+    "Text": "How many toes does a two toed sloth have?",
+    "CorrectIndex": 3
+  },
+  {
+    "Choices": [ "A worm", "A snake", "A jellyfish", "A whale" ],
+    "Text": "What kind of animal is the longest in the world?",
+    "CorrectIndex": 0
+  }
+]

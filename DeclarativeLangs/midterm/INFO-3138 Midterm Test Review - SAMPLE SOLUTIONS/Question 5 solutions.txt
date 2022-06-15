@@ -1,0 +1,35 @@
+Some solutions for Question 5 on JSONPath
+-----------------------------------------
+
+1.	Select the name property for every food
+
+	Answer:		$.food[*].name
+
+2.	Select the every property belonging to daily-values
+
+	Answer:		$.daily-values.*
+
+3.	Select the name of every food with a manufacturer of "Goodpath"
+
+	Answer:		$.food[?(@.manufacturer == "Goodpath")].name
+
+4.	Select the name of every food with less than 1 mg of cholesterol
+	
+	Answer:		$.food[?(@.cholesterol < 1)].name
+
+5.	Select the units of the serving (size) for every food that contains less than 
+	100 mg of sodium and more than 2 g of protein
+
+	Answer:		$.food[?(@.sodium < 100 && @.protein > 2)].serving.units
+
+6.	Select food objects in the food array that have subscripts of 1, 5, 6 and 8
+
+	Answer:		$.food[1,5,6,8]
+
+7.	Select all fiber properties from anywhere in the data-set
+
+	Answer:		$..fiber
+
+8.	Select the manufacturer for the last four food objects in the food array
+
+	Answer:		$.food[-4:].manufacturer

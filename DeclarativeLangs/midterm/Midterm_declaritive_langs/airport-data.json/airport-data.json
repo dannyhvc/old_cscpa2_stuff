@@ -1,0 +1,23 @@
+{
+  "when": "2021-06-03T10:32:05-04:00",
+  "airport": "YHM",
+  "flights": [
+    {
+      "airline": "Swoop",
+      "flight-number": 147,
+      "destination": "Winnipeg",
+      "departure-time": "07:30"
+    },
+    {
+      "flight-number": 105,
+      "destination": "Edmonton",
+      "departure-time": "14:25"
+    },
+    {
+      "airline": "Westjet",
+      "flight-number": 533,
+      "destination": "Calgary",
+      "departure-time": "15:50"
+    }
+  ]
+}

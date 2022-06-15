@@ -1,0 +1,20 @@
+{
+  "Title": "Old-Fashioned Lemonade",
+  "Ingredients": [
+    {
+      "Description": "lemons",
+      "Amount": 6,
+      "Units": "whole"
+    },
+    {
+      "Description": "white sugar",
+      "Amount": 1,
+      "Units": "cup"
+    },
+    {
+      "Description": "cold water",
+      "Amount": 6,
+      "Units": "cups"
+    }
+  ]
+}

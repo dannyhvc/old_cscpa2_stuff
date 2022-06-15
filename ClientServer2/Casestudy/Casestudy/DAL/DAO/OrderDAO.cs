@@ -38,7 +38,7 @@ namespace Casestudy.DAL.DAO
                              *      a. Decrease the QtyOnHand in the products table by Qty
                              *      b. QtySold = Qty, QtyOrdered = Qty, QtyBackOrdered = 0 in the line itemstable
                              */
-                            item.Item!.QtyOnHand -= item.Qty;
+                            product.QtyOnHand -= item.Qty;
                             orderLineItem.QtySold = item.Qty;
                             orderLineItem.QtyOrdered = item.Qty;
                             orderLineItem.QtyBackOrdered = 0;
@@ -53,7 +53,7 @@ namespace Casestudy.DAL.DAO
                              *       c. QtySold = QtyOnHand, QtyOrdered = Qty, QtyBackOrdered = Qty -
                              *       QtyOnHand
                              */
-                            item.Item!.QtyOnBackOrder = item.Qty - item.Item!.QtyOnHand;
+                            product.QtyOnBackOrder = item.Qty - item.Item!.QtyOnHand;
 
                             orderLineItem.QtySold = item.Item!.QtyOnHand;
                             orderLineItem.QtyOrdered = item.Qty;
@@ -62,12 +62,17 @@ namespace Casestudy.DAL.DAO
                         }//if else
                         order.OrderAmount += item.Item!.CostPrice;
                         orderLineItem.OrderId = order.Id;
+                        orderLineItem.Order = order;
+                        orderLineItem.Product = product;
+                        orderLineItem.ProductId = product.Id;
                         orderLineItem.SellingPrice = item.Item.CostPrice;
 
                         // db updating and addition
-                        _db.Entry(product).CurrentValues.SetValues(item.Item!); // updating product quantities
+                        _db.Entry(await pdao.GetById(item.Id!)).CurrentValues.SetValues(item.Item!); // updating product quantities
+                        //await _db.SaveChangesAsync(); // saving
                         //await _db.OrderLineItems!.AddAsync(orderLineItem); // adding order line transaction info NOT WORKING!
                         await _db.SaveChangesAsync(); // saving
+
                     }// foreach
 
                     await _db.Orders!.AddAsync(order);

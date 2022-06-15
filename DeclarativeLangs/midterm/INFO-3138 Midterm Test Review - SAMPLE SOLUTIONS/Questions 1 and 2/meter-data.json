@@ -1,0 +1,31 @@
+{
+  "time-collected": "2021-05-30T08:31:25-04:00",
+  "meter-number":  "L252",
+  "coins": [
+    {
+      "name": "nickel",
+      "value": 0.05,
+      "count": 33
+    },
+    {
+      "name": "dime",
+      "value": 0.10,
+      "count": 27
+    },
+    {
+      "name": "quarter",
+      "value": 0.25,
+      "count": 68
+    },
+    {
+      "name": "loonie",
+      "value": 1,
+      "count": 102
+    },
+    {
+      "name": "toonie",
+      "value": 2,
+      "count": 81
+    }
+  ]
+}

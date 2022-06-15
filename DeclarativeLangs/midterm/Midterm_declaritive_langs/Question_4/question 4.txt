@@ -1,0 +1,16 @@
+4A.
+$..municipality,level
+
+
+4B.
+$.schools..[?(@.name contains "Private")]
+
+
+4C.
+$.schools..[?(@.x < 475000 && @.y > 4760000 )]
+
+
+4D.
+$.schools..[0:9].website
+
+

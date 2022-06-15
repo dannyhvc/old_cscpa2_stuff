@@ -2,8 +2,6 @@
 using Casestudy.DAL.DAO;
 using Casestudy.DAL.DomainClasses;
 using Casestudy.Helpers;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Casestudy.Controllers
@@ -29,14 +27,14 @@ namespace Casestudy.Controllers
                 CustomerDAO uDao = new(_ctx);
                 Customer? cartOwner = await uDao.GetByEmail(helper.Email);
                 OrderDAO tDao = new(_ctx);
-                int trayId = await tDao.AddOrder(cartOwner!.Id, helper.Items!);
-                retVal = trayId > 0
-                    ? "Tray " + trayId + " saved!"
-                    : "Tray not saved";
+                int cartId = await tDao.AddOrder(cartOwner!.Id, helper.Items!);
+                retVal = cartId > 0
+                    ? "Cart " + cartId + " saved!"
+                    : "Cart not saved";
             }
             catch (Exception ex)
             {
-                retVal = "Tray not saved " + ex.Message;
+                retVal = "Cart not saved " + ex.Message;
             }
             return retVal;
         }

@@ -1,0 +1,1249 @@
+{
+  "municipality": "London, Ontario",
+  "level": "elementary",
+  "schools": [
+    {
+      "name": "Lambeth Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "6820 Duffield St",
+      "coordinates": {
+        "x": 475702.9584,
+        "y": 4751241.924
+      },
+      "website": "https://lambeth.tvdsb.ca/"
+    },
+    {
+      "name": "Aberdeen Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "556 Grey St",
+      "coordinates": {
+        "x": 481260.0905,
+        "y": 4758779.283
+      },
+      "website": "http://aberdeen.tvdsb.ca/"
+    },
+    {
+      "name": "Arthur Ford Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "617 Viscount Rd",
+      "coordinates": {
+        "x": 478003.0135,
+        "y": 4755563
+      },
+      "website": "https://arthurford.tvdsb.ca/"
+    },
+    {
+      "name": "Arthur Stringer Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "43 Shaftesbury Ave",
+      "coordinates": {
+        "x": 483050.2337,
+        "y": 4755160.714
+      },
+      "website": "https://arthurstringer.tvdsb.ca/"
+    },
+    {
+      "name": "Ashley Oaks Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "121 Ashley Cres",
+      "coordinates": {
+        "x": 480223.116,
+        "y": 4753860.941
+      },
+      "website": "https://ashleyoaks.tvdsb.ca/"
+    },
+    {
+      "name": "East Carling Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "814 Quebec St",
+      "coordinates": {
+        "x": 481757.2144,
+        "y": 4761198.337
+      },
+      "website": "https://eastcarling.tvdsb.ca/"
+    },
+    {
+      "name": "Bonaventure Meadows Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "141 Bonaventure Dr",
+      "coordinates": {
+        "x": 487279.3313,
+        "y": 4761415.591
+      },
+      "website": "https://bonaventure.tvdsb.ca/"
+    },
+    {
+      "name": "Byron Northview Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1370 Commissioners Rd W",
+      "coordinates": {
+        "x": 472389.681,
+        "y": 4756564.18
+      },
+      "website": "https://byronnorthview.tvdsb.ca/"
+    },
+    {
+      "name": "Byron Somerset Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "175 Whisperwood Ave",
+      "coordinates": {
+        "x": 473460.5029,
+        "y": 4754961.041
+      },
+      "website": "https://byronsomerset.tvdsb.ca/"
+    },
+    {
+      "name": "Byron Southwood Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1379 Lola St",
+      "coordinates": {
+        "x": 472782.8155,
+        "y": 4755405.011
+      },
+      "website": "https://byronsouthwood.tvdsb.ca/"
+    },
+    {
+      "name": "C.C. Carrothers Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "360 Chippendale Cres",
+      "coordinates": {
+        "x": 482904.5669,
+        "y": 4756677.226
+      },
+      "website": "https://carrothers.tvdsb.ca/"
+    },
+    {
+      "name": "Chippewa Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1035 Chippewa Dr",
+      "coordinates": {
+        "x": 484010.4946,
+        "y": 4763998.226
+      },
+      "website": "http://chippewa.tvdsb.ca/"
+    },
+    {
+      "name": "Clara Brenton Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1025 St Croix Ave",
+      "coordinates": {
+        "x": 474288.7303,
+        "y": 4758642.989
+      },
+      "website": "https://clarabrenton.tvdsb.ca/"
+    },
+    {
+      "name": "Cleardale Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "780 Dulaney Dr",
+      "coordinates": {
+        "x": 480391.8033,
+        "y": 4754799.676
+      },
+      "website": "https://cleardale.tvdsb.ca/"
+    },
+    {
+      "name": "Ealing Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "840 Hamilton Rd",
+      "coordinates": {
+        "x": 483683.0191,
+        "y": 4758486.594
+      },
+      "website": "https://ealing.tvdsb.ca/"
+    },
+    {
+      "name": "Emily Carr Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "44 Hawthorne Rd",
+      "coordinates": {
+        "x": 474538.6862,
+        "y": 4761870.809
+      },
+      "website": "https://emilycarr.tvdsb.ca/"
+    },
+    {
+      "name": "Jeanne Sauve - French Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "215 Wharncliffe Rd N",
+      "coordinates": {
+        "x": 478503.0929,
+        "y": 4759830.835
+      },
+      "website": "https://jeannesauve.tvdsb.ca/"
+    },
+    {
+      "name": "Evelyn Harrison Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "50 Tewksbury Cres",
+      "coordinates": {
+        "x": 484062.1579,
+        "y": 4763410.516
+      },
+      "website": "https://evelynharrison.tvdsb.ca/"
+    },
+    {
+      "name": "F.D. Roosevelt Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "560 Second St",
+      "coordinates": {
+        "x": 484226.6735,
+        "y": 4761936.963
+      },
+      "website": "https://fdr.tvdsb.ca/"
+    },
+    {
+      "name": "Fairmont Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1040 Hamilton Rd",
+      "coordinates": {
+        "x": 484752.8939,
+        "y": 4758330.09
+      },
+      "website": "https://fairmont.tvdsb.ca/"
+    },
+    {
+      "name": "Glen Cairn Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "53 Frontenac Rd",
+      "coordinates": {
+        "x": 483309.2085,
+        "y": 4756065.052
+      },
+      "website": "https://glencairn.tvdsb.ca/"
+    },
+    {
+      "name": "Hillcrest Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1231 Fuller St",
+      "coordinates": {
+        "x": 481767.0487,
+        "y": 4763303.742
+      },
+      "website": "https://hillcrest.tvdsb.ca/"
+    },
+    {
+      "name": "Jack Chambers Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1650 Hastings Dr",
+      "coordinates": {
+        "x": 478073.6838,
+        "y": 4764870.778
+      },
+      "website": "http://jackchambers.tvdsb.ca/"
+    },
+    {
+      "name": "John Dearness Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "555 Sanatorium Rd",
+      "coordinates": {
+        "x": 473062.4644,
+        "y": 4757032.617
+      },
+      "website": "https://johndearness.tvdsb.ca/"
+    },
+    {
+      "name": "John P. Robarts Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "84 Bow St",
+      "coordinates": {
+        "x": 486963.2896,
+        "y": 4759676.483
+      },
+      "website": "https://robarts.tvdsb.ca/"
+    },
+    {
+      "name": "Kensal Park - French Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "328 Springbank Dr",
+      "coordinates": {
+        "x": 477312.2279,
+        "y": 4757437.365
+      },
+      "website": "https://kensalpark.tvdsb.ca/"
+    },
+    {
+      "name": "Knollwood Park Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "70 Gammage St",
+      "coordinates": {
+        "x": 481269.875,
+        "y": 4761644.946
+      },
+      "website": "https://knollwoodpark.tvdsb.ca/"
+    },
+    {
+      "name": "Lord Elgin Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1100 Victoria Dr",
+      "coordinates": {
+        "x": 481692.2176,
+        "y": 4762354.649
+      },
+      "website": "http://lordelgin.tvdsb.ca/"
+    },
+    {
+      "name": "Lord Nelson Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1990 Royal Cres",
+      "coordinates": {
+        "x": 486367.9899,
+        "y": 4760720.281
+      },
+      "website": "https://lordnelson.tvdsb.ca/"
+    },
+    {
+      "name": "Lord Roberts - French Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "440 Princess Ave",
+      "coordinates": {
+        "x": 480444.7671,
+        "y": 4759870.964
+      },
+      "website": "https://lordroberts.tvdsb.ca/"
+    },
+    {
+      "name": "Masonville Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "25 Hillview Blvd",
+      "coordinates": {
+        "x": 476810.6807,
+        "y": 4763692.374
+      },
+      "website": "https://masonville.tvdsb.ca/"
+    },
+    {
+      "name": "Mountsfield Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "8 Mountsfield Dr",
+      "coordinates": {
+        "x": 480120.0736,
+        "y": 4756306.878
+      },
+      "website": "https://mountsfield.tvdsb.ca/"
+    },
+    {
+      "name": "Nicholas Wilson Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "927 Osgoode Dr",
+      "coordinates": {
+        "x": 482245.3578,
+        "y": 4754068.283
+      },
+      "website": "https://nicholaswilson.tvdsb.ca/"
+    },
+    {
+      "name": "Northbrae Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "335 Belfield St",
+      "coordinates": {
+        "x": 480385.3658,
+        "y": 4762640.746
+      },
+      "website": "https://northbrae.tvdsb.ca/"
+    },
+    {
+      "name": "Northridge Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "25 Mclean Dr",
+      "coordinates": {
+        "x": 480872.4216,
+        "y": 4764921.962
+      },
+      "website": "https://northridge.tvdsb.ca/"
+    },
+    {
+      "name": "Orchard Park Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "50 Wychwood Pk",
+      "coordinates": {
+        "x": 476208.2883,
+        "y": 4760944.837
+      },
+      "website": "https://orchardpark.tvdsb.ca/"
+    },
+    {
+      "name": "Eagle Heights Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "284 Oxford St W",
+      "coordinates": {
+        "x": 477544.2366,
+        "y": 4759478.798
+      },
+      "website": "https://eagleheights.tvdsb.ca/"
+    },
+    {
+      "name": "Prince Charles Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1601 Wavell St",
+      "coordinates": {
+        "x": 484653.7651,
+        "y": 4760060.231
+      },
+      "website": "https://princecharles.tvdsb.ca/"
+    },
+    {
+      "name": "Princess Anne - French - Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "191 Dawn Dr",
+      "coordinates": {
+        "x": 485297.3287,
+        "y": 4759911.173
+      },
+      "website": "https://princessanne.tvdsb.ca/"
+    },
+    {
+      "name": "Princess Elizabeth - French Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "247 Thompson Rd",
+      "coordinates": {
+        "x": 481973.3775,
+        "y": 4757271.779
+      },
+      "website": "https://princesselizabeth.tvdsb.ca/"
+    },
+    {
+      "name": "Rick Hansen Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "70 Ponderosa Cres",
+      "coordinates": {
+        "x": 480993.9041,
+        "y": 4753872.014
+      },
+      "website": "https://rickhansen.tvdsb.ca/"
+    },
+    {
+      "name": "Riverside Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "550 Pinetree Dr",
+      "coordinates": {
+        "x": 475152.6756,
+        "y": 4757964.278
+      },
+      "website": "https://riverside.tvdsb.ca/"
+    },
+    {
+      "name": "Ryerson Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "940 Waterloo St",
+      "coordinates": {
+        "x": 479488.739,
+        "y": 4761380.664
+      },
+      "website": "https://ryerson.tvdsb.ca/"
+    },
+    {
+      "name": "Sir Georges-Etienne Cartier Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "695 Chiddington Ave",
+      "coordinates": {
+        "x": 480878.0183,
+        "y": 4755695.498
+      },
+      "website": "https://sirgeorges.tvdsb.ca/"
+    },
+    {
+      "name": "Sir Isaac Brock Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "80 St Lawrence Blvd",
+      "coordinates": {
+        "x": 478611.615,
+        "y": 4754619.585
+      },
+      "website": "https://brock.tvdsb.ca/"
+    },
+    {
+      "name": "Sir John A. MacDonald Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1150 Landor St",
+      "coordinates": {
+        "x": 482206.4818,
+        "y": 4762092.819
+      },
+      "website": "https://macdonald.tvdsb.ca/"
+    },
+    {
+      "name": "St. George's Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "782 Waterloo St",
+      "coordinates": {
+        "x": 479772.7447,
+        "y": 4760643.844
+      },
+      "website": "https://stgeorges.tvdsb.ca/"
+    },
+    {
+      "name": "Stoneybrook Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1460 Stoneybrook Cres",
+      "coordinates": {
+        "x": 478695.4257,
+        "y": 4764020.002
+      },
+      "website": "https://stoneybrook.tvdsb.ca/"
+    },
+    {
+      "name": "Tecumseh Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "401 Tecumseh Ave E",
+      "coordinates": {
+        "x": 480294.0745,
+        "y": 4757417.515
+      },
+      "website": "https://tecumseh.tvdsb.ca/"
+    },
+    {
+      "name": "Trafalgar Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "919 Trafalgar St",
+      "coordinates": {
+        "x": 482616.0882,
+        "y": 4758567.638
+      },
+      "website": "https://trafalgar.tvdsb.ca/"
+    },
+    {
+      "name": "Tweedsmuir Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "349 Tweedsmuir Ave",
+      "coordinates": {
+        "x": 485387.5271,
+        "y": 4758702.376
+      },
+      "website": "https://tweedsmuir.tvdsb.ca/"
+    },
+    {
+      "name": "University Heights Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "27 Ford Cres",
+      "coordinates": {
+        "x": 477265.93,
+        "y": 4760617.205
+      },
+      "website": "https://universityheights.tvdsb.ca/"
+    },
+    {
+      "name": "Victoria Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "130 Wharncliffe Rd S",
+      "coordinates": {
+        "x": 478684.974,
+        "y": 4757890.766
+      },
+      "website": "http://victoria.tvdsb.ca/"
+    },
+    {
+      "name": "W. Sherwood Fox Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "660 Steeplechase Dr",
+      "coordinates": {
+        "x": 476844.6342,
+        "y": 4755259.633
+      },
+      "website": "https://sherwoodfox.tvdsb.ca/"
+    },
+    {
+      "name": "West Oaks- French Immersion- Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "1050 Plantation Rd",
+      "coordinates": {
+        "x": 474422.7512,
+        "y": 4757747.52
+      },
+      "website": "https://westoaks.tvdsb.ca/"
+    },
+    {
+      "name": "Westminster Central Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "2835 Westminster Dr",
+      "coordinates": {
+        "x": 483749.9246,
+        "y": 4749937.59
+      },
+      "website": "https://westminstercentral.tvdsb.ca/"
+    },
+    {
+      "name": "Westmount Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1011 Viscount Rd",
+      "coordinates": {
+        "x": 476123.699,
+        "y": 4754716.782
+      },
+      "website": "https://westmount.tvdsb.ca/"
+    },
+    {
+      "name": "White Oaks Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "565 Bradley Ave",
+      "coordinates": {
+        "x": 481049.6395,
+        "y": 4753432.098
+      },
+      "website": "https://whiteoaks.tvdsb.ca/"
+    },
+    {
+      "name": "Wilfrid Jury Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "950 Lawson Rd",
+      "coordinates": {
+        "x": 475055.6599,
+        "y": 4760498.243
+      },
+      "website": "https://wilfridjury.tvdsb.ca/"
+    },
+    {
+      "name": "Wilton Grove Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "626 Osgoode Dr",
+      "coordinates": {
+        "x": 483057.8433,
+        "y": 4754301.477
+      },
+      "website": "https://wiltongrove.tvdsb.ca/"
+    },
+    {
+      "name": "Woodland Heights Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "474 Springbank Dr",
+      "coordinates": {
+        "x": 476617.5047,
+        "y": 4756955.114
+      },
+      "website": "https://woodlandheights.tvdsb.ca/"
+    },
+    {
+      "name": "Wortley Road Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "301 Wortley Rd",
+      "coordinates": {
+        "x": 479580.2152,
+        "y": 4757141.251
+      },
+      "website": "https://wortley.tvdsb.ca/"
+    },
+    {
+      "name": "Lester B. Pearson School For The Arts",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "795 Trafalgar St",
+      "coordinates": {
+        "x": 482173.3447,
+        "y": 4758391.25
+      },
+      "website": "https://pearson.tvdsb.ca/"
+    },
+    {
+      "name": "Robarts School for the Deaf",
+      "french-immersion": "no",
+      "board": "Provincial",
+      "address": "1515 Cheapside St",
+      "coordinates": {
+        "x": 482983.8692,
+        "y": 4762310.176
+      },
+      "website": "https://pdsbnet.ca/en/schools/robarts/"
+    },
+    {
+      "name": "Ecole elementaire catholique Frere-Andre - French First Language Catholic Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire de District des Ecoles Catholique",
+      "address": "400 Base Line Rd W",
+      "coordinates": {
+        "x": 477261.0464,
+        "y": 4756777.372
+      },
+      "website": "https://ecolescatholiquesontario.ca/places/conseil-scolaire-catholique-providence/ecole-elementaire-catholique-frere-andre/"
+    },
+    {
+      "name": "Ecole elementaire catholique Sainte-Jeanne-d'Arc - French First Language Catholic Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire de District des Ecoles Catholique",
+      "address": "35 Fallons Lane",
+      "coordinates": {
+        "x": 483475.2721,
+        "y": 4763650.826
+      },
+      "website": "https://ecolescatholiquesontario.ca/places/conseil-scolaire-catholique-providence/ecole-elementaire-catholique-sainte-jeanne-darc/"
+    },
+    {
+      "name": "Acadamie de la Tamise - French First Language Public Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire Viamonde",
+      "address": "1260 Dundas St",
+      "coordinates": {
+        "x": 483293.8296,
+        "y": 4760527.998
+      },
+      "website": "https://csviamonde.ca/nos-ecoles/trouver-une-ecole/fiche-ecole/academie-de-la-tamise/"
+    },
+    {
+      "name": "Ecole elementaire catholique Saint-Jean-de-Brebeuf - French First Language Catholic Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire de District des Ecoles Catholique",
+      "address": "270 Chelton Rd",
+      "coordinates": {
+        "x": 485601.2357,
+        "y": 4756195.776
+      },
+      "website": "https://ecolescatholiquesontario.ca/places/conseil-scolaire-catholique-providence/ecole-elementaire-catholique-saint-jean-de-brebeuf/"
+    },
+    {
+      "name": "Ecole elementaire Marie-Curie - French First Language Public Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire Viamonde",
+      "address": "40 Hunt Club Dr",
+      "coordinates": {
+        "x": 473257.9332,
+        "y": 4758087.083
+      },
+      "website": "https://marie-curie.cepeo.on.ca/"
+    },
+    {
+      "name": "St. Kateri Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "220 Sunnyside Dr",
+      "coordinates": {
+        "x": 478473.1847,
+        "y": 4763481.149
+      },
+      "website": "https://kat.ldcsb.ca/"
+    },
+    {
+      "name": "Blessed Sacrament Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1063 Oxford St E",
+      "coordinates": {
+        "x": 482225.9297,
+        "y": 4761404.727
+      },
+      "website": "https://sac.ldcsb.ca/"
+    },
+    {
+      "name": "Holy Family Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "329 Hudson Dr",
+      "coordinates": {
+        "x": 487242.945,
+        "y": 4759864.903
+      },
+      "website": "https://fal.ldcsb.ca/"
+    },
+    {
+      "name": "Holy Rosary Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "268 Herkimer St",
+      "coordinates": {
+        "x": 481209.3784,
+        "y": 4757098.498
+      },
+      "website": "https://ros.ldcsb.ca/"
+    },
+    {
+      "name": "Jean Vanier Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1019 Viscount Rd",
+      "coordinates": {
+        "x": 476038.708,
+        "y": 4754796.449
+      },
+      "website": "https://van.ldcsb.ca/"
+    },
+    {
+      "name": "Notre Dame Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "767 Valetta St",
+      "coordinates": {
+        "x": 475471.8439,
+        "y": 4758134.343
+      },
+      "website": "https://dam.ldcsb.ca/"
+    },
+    {
+      "name": "St. Anne Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1366 Huron St",
+      "coordinates": {
+        "x": 482660.8948,
+        "y": 4763197.34
+      },
+      "website": "https://ann.ldcsb.ca/"
+    },
+    {
+      "name": "St. Anthony - French - Immersion Catholic School",
+      "french-immersion": "yes",
+      "board": "London District Catholic School Board",
+      "address": "1380 Ernest Ave",
+      "coordinates": {
+        "x": 480814.6478,
+        "y": 4753211.232
+      },
+      "website": "https://ant.ldcsb.ca/"
+    },
+    {
+      "name": "St. Bernadette Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "155 Tweedsmuir Ave",
+      "coordinates": {
+        "x": 485060.4311,
+        "y": 4758809.075
+      },
+      "website": "https://ber.ldcsb.ca/"
+    },
+    {
+      "name": "St. Francis Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "690 Osgoode Dr",
+      "coordinates": {
+        "x": 483006.9281,
+        "y": 4754593.211
+      },
+      "website": "https://frl.ldcsb.ca/"
+    },
+    {
+      "name": "St. George Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "375 Lynden Cres",
+      "coordinates": {
+        "x": 473391.7593,
+        "y": 4755962.784
+      },
+      "website": "https://geo.ldcsb.ca/"
+    },
+    {
+      "name": "St. John Catholic - French Immersion - Catholic School",
+      "french-immersion": "yes",
+      "board": "London District Catholic School Board",
+      "address": "1212 Coronation Dr",
+      "coordinates": {
+        "x": 473634.1485,
+        "y": 4760361.828
+      },
+      "website": "https://jhn.ldcsb.ca/"
+    },
+    {
+      "name": "St. Jude Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "690 Viscount Rd",
+      "coordinates": {
+        "x": 478036.1684,
+        "y": 4755175.461
+      },
+      "website": "https://jul.ldcsb.ca/"
+    },
+    {
+      "name": "St. Marguerite d'Youville Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "170 Hawthorne Rd",
+      "coordinates": {
+        "x": 473844.9215,
+        "y": 4761610.225
+      },
+      "website": "https://mrg.ldcsb.ca/"
+    },
+    {
+      "name": "St. Mark Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1440 Glenora Dr",
+      "coordinates": {
+        "x": 480786.3299,
+        "y": 4764744.14
+      },
+      "website": "https://mrk.ldcsb.ca/"
+    },
+    {
+      "name": "St. Martin Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "140 Duchess Ave",
+      "coordinates": {
+        "x": 479313.0135,
+        "y": 4757495.32
+      },
+      "website": "https://mrt.ldcsb.ca/"
+    },
+    {
+      "name": "St. Mary Choir Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "347 Lyle St",
+      "coordinates": {
+        "x": 481373.067,
+        "y": 4759497.429
+      },
+      "website": "https://mal.ldcsb.ca/"
+    },
+    {
+      "name": "St. Michael Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "926 Maitland St",
+      "coordinates": {
+        "x": 480059.2453,
+        "y": 4761302.753
+      },
+      "website": "https://mil.ldcsb.ca/"
+    },
+    {
+      "name": "St. Paul Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1090 Guildwood Blvd",
+      "coordinates": {
+        "x": 474026.2593,
+        "y": 4758403.435
+      },
+      "website": "https://pll.ldcsb.ca/"
+    },
+    {
+      "name": "St. Pius X Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "255 Vancouver St",
+      "coordinates": {
+        "x": 484897.1492,
+        "y": 4760206.222
+      },
+      "website": "https://piu.ldcsb.ca/"
+    },
+    {
+      "name": "St. Sebastian Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "225 Cairn St",
+      "coordinates": {
+        "x": 483214.8899,
+        "y": 4756987.1
+      },
+      "website": "https://seb.ldcsb.ca/"
+    },
+    {
+      "name": "St. Theresa Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "108 Fairlane Ave",
+      "coordinates": {
+        "x": 472325.6209,
+        "y": 4755137.587
+      },
+      "website": "https://the.ldcsb.ca/"
+    },
+    {
+      "name": "St. Thomas More Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "18 Wychwood Pk",
+      "coordinates": {
+        "x": 476413.9798,
+        "y": 4760729.207
+      },
+      "website": "https://tho.ldcsb.ca/"
+    },
+    {
+      "name": "Sir Arthur Carty Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1655 Ernest Ave",
+      "coordinates": {
+        "x": 480489.9107,
+        "y": 4753914.628
+      },
+      "website": "https://crt.ldcsb.ca/"
+    },
+    {
+      "name": "St. Catherine of Siena Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "2140 Quarrier Rd",
+      "coordinates": {
+        "x": 476235.0792,
+        "y": 4764365.091
+      },
+      "website": "https://cat.ldcsb.ca/"
+    },
+    {
+      "name": "Stoney Creek Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1335 Nicole Ave",
+      "coordinates": {
+        "x": 480275.2308,
+        "y": 4766005.033
+      },
+      "website": "https://stoneycreek.tvdsb.ca/"
+    },
+    {
+      "name": "London Islamic School Private",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "151 Oxford St W",
+      "coordinates": {
+        "x": 477943.9184,
+        "y": 4759808.043
+      },
+      "website": "http://www.londonislamicschool.com/"
+    },
+    {
+      "name": "The London School Private",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "151 Oxford St W",
+      "coordinates": {
+        "x": 479701.3109,
+        "y": 4759915.093
+      },
+      "website": "http://www.thelondonschool.ca/"
+    },
+    {
+      "name": "London Waldorf Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "7 Beaufort St",
+      "coordinates": {
+        "x": 478527.6692,
+        "y": 4760442.401
+      },
+      "website": "https://www.londonwaldorf.ca/"
+    },
+    {
+      "name": "Mathews Hall Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "1370 Oxford St W",
+      "coordinates": {
+        "x": 472439.9634,
+        "y": 4757548.332
+      },
+      "website": "https://matthewshall.ca/"
+    },
+    {
+      "name": "Montessori Academy of London Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "711 Waterloo St",
+      "coordinates": {
+        "x": 479799.7842,
+        "y": 4760335.834
+      },
+      "website": "https://montessori.on.ca/"
+    },
+    {
+      "name": "Ecole Elementaire La Pommeraie - French First Language Public Elementary School",
+      "french-immersion": "no",
+      "board": "Conseil Scolaire Viamonde",
+      "address": "3500 Settlement Trail",
+      "coordinates": {
+        "x": 475081.5545,
+        "y": 4753327.402
+      },
+      "website": "https://csviamonde.ca/nos-ecoles/trouver-une-ecole/fiche-ecole/ecole-elementaire-la-pommeraie/"
+    },
+    {
+      "name": "London Christian Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "202 Clarke Rd",
+      "coordinates": {
+        "x": 486141.4885,
+        "y": 4760344.989
+      },
+      "website": "https://londonchristian.ca/"
+    },
+    {
+      "name": "Sir Arthur Currie Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "2435 Buroak Dr",
+      "coordinates": {
+        "x": 473537.9537,
+        "y": 4763614.781
+      },
+      "website": "https://sirarthurcurrie.tvdsb.ca/"
+    },
+    {
+      "name": "Cedar Hollow Public School",
+      "french-immersion": "no",
+      "board": "Thames Valley District School Board",
+      "address": "1800 Cedarhollow Blvd",
+      "coordinates": {
+        "x": 482719.9663,
+        "y": 4765645.673
+      },
+      "website": "https://cedarhollow.tvdsb.ca/"
+    },
+    {
+      "name": "Infinity School Private",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "115 Askin St",
+      "coordinates": {
+        "x": 479227.5101,
+        "y": 4757847.206
+      },
+      "website": "https://www.infinityschool.ca/"
+    },
+    {
+      "name": "Adventist Christian School Private",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "805 Shelborne St",
+      "coordinates": {
+        "x": 483646.619,
+        "y": 4756718.265
+      },
+      "website": "http://www.aceslondon.ca/"
+    },
+    {
+      "name": "Al-Taqwa Academy Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "1837 Churchill Ave",
+      "coordinates": {
+        "x": 485476.0489,
+        "y": 4760758.92
+      },
+      "website": "http://www.altaqwa.org/"
+    },
+    {
+      "name": "Louise Arbour - French Immersion - Public School",
+      "french-immersion": "yes",
+      "board": "Thames Valley District School Board",
+      "address": "365 Belfield St",
+      "coordinates": {
+        "x": 480316.8024,
+        "y": 4762770.731
+      },
+      "website": "https://louisearbour.tvdsb.ca/"
+    },
+    {
+      "name": "Covenant Christian Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "7 Howard Ave",
+      "coordinates": {
+        "x": 475885.9738,
+        "y": 4750469.968
+      },
+      "website": "https://www.ccslondon.org/"
+    },
+    {
+      "name": "St. Nicholas Catholic School",
+      "french-immersion": "no",
+      "board": "London District Catholic School Board",
+      "address": "1956 Shore rd",
+      "coordinates": {
+        "x": 470416.5603,
+        "y": 4757463.742
+      },
+      "website": "https://nic.ldcsb.ca/"
+    },
+    {
+      "name": "Byron Woods Montessori Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "1468 Commissioners Rd W",
+      "coordinates": {
+        "x": 471799.6616,
+        "y": 4756794.987
+      },
+      "website": "https://bwms.ca/"
+    },
+    {
+      "name": "Christian Academy of Western Ontario Private School",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "85 Charles St",
+      "coordinates": {
+        "x": 478222.7589,
+        "y": 4759124.479
+      },
+      "website": "http://www.londonchristianacademy.ca/"
+    },
+    {
+      "name": "London Community Hebrew Day School Private",
+      "french-immersion": "no",
+      "board": "Private",
+      "address": "536 Huron St",
+      "coordinates": {
+        "x": 480022.0174,
+        "y": 4762359.678
+      },
+      "website": "http://www.lchds.ca/"
+    }
+  ]
+}

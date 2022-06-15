@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<!--
+    File:           trivia.html
+    Course:         INFO-3138
+    Date:           May 26, 2021
+    Description:    A sample solution to question 4 of the midterm test review
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Trivia Questions</title>
+</head>
+<body>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+
+                // Once the JSON file loads...
+
+                // Parse the trivia data to create an array of question objects
+                var allQuestions = JSON.parse(this.responseText);
+
+                // Loop through all the trivia questions 
+                var correctText;
+                for (var q = 0; q < allQuestions.length; q++) {
+
+                    // Display the question text
+                    document.writeln("<h3>" + (q + 1) + ". " + allQuestions[q].Text + "</h3>");
+
+                    // Display the choices, stating which is the correct answer
+                    for (var c = 0; c < allQuestions[q].Choices.length; c++) {
+                        if (c == allQuestions[q].CorrectIndex)
+                            correctText = " [CORRECT]";
+                        else
+                            correctText = "";
+                        // The following line also generates a letter prefix for the choice like "A."
+                        // using the method String.fromCharCode() 
+                        document.writeln("<ul>" + String.fromCharCode('A'.charCodeAt(0) + c) + ". "
+                            + allQuestions[q].Choices[c] + correctText + "</ul>");
+                    }
+                }
+            }
+        };
+        xmlhttp.open("GET", "trivia-data.json", true);
+        xmlhttp.send();
+    </script>
+</body>
+</html>

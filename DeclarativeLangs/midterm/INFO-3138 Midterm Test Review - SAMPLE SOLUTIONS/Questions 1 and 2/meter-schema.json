@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "properties": {
+    "time-collected": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "meter-number": {
+      "type": "string",
+      "pattern": "^[A-Z]\\d{3}$"
+    },
+    "coins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [ "value", "count" ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [ "nickel", "dime", "quarter", "loonie", "toonie" ]
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

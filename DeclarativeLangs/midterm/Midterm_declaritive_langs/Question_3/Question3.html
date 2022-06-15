@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Recipde Ingredients</h1>
+    <h3 id="recipe_title">Recipe: </h3>
+    <ul id="ig_list" style="list-style-type: none;"></ul>
+
+    <script>
+        const setTitle = (title) => {
+            document.getElementById("recipe_title").innerHTML = `Recipe: ${title}`;
+        };
+
+        const setIngredient = (description, amount, units) => {
+            var ul = document.getElementById("ig_list");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(description + ", " + amount + " " + units));
+            ul.appendChild(li);
+        }
+
+        fetch("./recipe.json")
+                .then(res => res.json()) // parsing the json response
+                .then(data => {
+                    setTitle(data.Title);
+                    for(i = 0; i < data.Ingredients.length; i++) {
+                        setIngredient(
+                            data.Ingredients[i].Description, 
+                            data.Ingredients[i].Amount, 
+                            data.Ingredients[i].Units
+                        );
+                        console.log(data.Ingredients[i]);
+                    }
+                });
+        
+    </script>
+</body>
+</html>
