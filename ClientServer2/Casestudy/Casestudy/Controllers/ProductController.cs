@@ -5,7 +5,7 @@ using Casestudy.DAL.DomainClasses;
 using Microsoft.AspNetCore.Authorization;
 using Casestudy.DAL.DAO;
 
-namespace ExercisesAPI.Controllers
+namespace Casestudy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

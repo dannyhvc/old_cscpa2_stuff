@@ -41,6 +41,11 @@ const routes = [
 				path: "/logout",
 				component: () => import("components/LogoutCustomer.vue"),
 			},
+			{
+				path: "/branch",
+				name: "branch",
+				component: () => import("src/components/BranchLocator.vue"),
+			},
 		],
 	},
 	// Always leave this as last one,

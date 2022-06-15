@@ -1,0 +1,1 @@
+--CREATE OR ALTER PROCEDURE pGetThreeClosestBranches (@lat1 float, @lng1 float)--AS--select TOP 3 *, 'Distance'=SQRT(POWER(Branches.Latitude - @lat1, 2) + POWER(Branches.Longitude - @lng1, 2)) * 62.1371192 from Branches order by 'distance';exec pGetThreeClosestBranches 42.98427, -81.25753

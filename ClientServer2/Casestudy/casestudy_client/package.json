@@ -2,7 +2,7 @@
     "name": "casestudy_client",
     "version": "0.0.1",
     "description": "A Quasar Project",
-    "productName": "casestudy_client",
+    "productName": "Casestudy 2",
     "author": "Daniel Herrera <26307270+dannyhvc@users.noreply.github.com>",
     "private": true,
     "scripts": {

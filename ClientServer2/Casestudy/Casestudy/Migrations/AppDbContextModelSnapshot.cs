@@ -22,6 +22,40 @@ namespace Casestudy.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Branch", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("City")
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<double?>("Distance")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Region")
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
+
+                    b.Property<string>("Street")
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Branches");
+                });
+
             modelBuilder.Entity("Casestudy.DAL.DomainClasses.Brand", b =>
                 {
                     b.Property<int>("Id")
@@ -137,7 +171,7 @@ namespace Casestudy.Migrations
                     b.ToTable("OrderLineItems");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -190,16 +224,16 @@ namespace Casestudy.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Casestudy.DAL.DomainClasses.Item", "Item")
+                    b.HasOne("Casestudy.DAL.DomainClasses.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId");
 
                     b.Navigation("Order");
 
-                    b.Navigation("Item");
+                    b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Item", b =>
+            modelBuilder.Entity("Casestudy.DAL.DomainClasses.Product", b =>
                 {
                     b.HasOne("Casestudy.DAL.DomainClasses.Brand", "Brand")
                         .WithMany()

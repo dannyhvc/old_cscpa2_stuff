@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ExercisesAPI.Controllers
+namespace Casestudy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

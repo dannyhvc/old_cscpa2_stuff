@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
 
-namespace ExercisesAPI.Controllers
+namespace Casestudy.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

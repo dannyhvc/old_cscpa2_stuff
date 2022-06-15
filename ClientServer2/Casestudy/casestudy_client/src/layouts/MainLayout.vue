@@ -21,6 +21,9 @@
 							<q-item clickable v-close-popup to="logout">
 								<q-item-section>Logout</q-item-section>
 							</q-item>
+							<q-item clickable v-close-popup to="branch">
+								<q-item-section>Branches</q-item-section>
+							</q-item>
 						</q-list>
 					</q-menu>
 				</q-btn>

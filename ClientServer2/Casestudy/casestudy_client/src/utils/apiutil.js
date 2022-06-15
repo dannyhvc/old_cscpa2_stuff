@@ -1,7 +1,8 @@
 //TODO: if the api server port is wrong no request will be sent to it
 // current api server port is 7164
 // current client port is 8081
-const serverURL = "https://localhost:7134/api/";
+// const serverURL = "https://localhost:7134/api/";
+const serverURL = "/api/";
 const fetcher = async (endpoint) => {
 	let payload;
 	let headers = buildHeaders();
